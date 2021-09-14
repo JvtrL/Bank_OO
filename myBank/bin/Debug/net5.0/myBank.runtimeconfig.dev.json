@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Lucimara\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Lucimara\\.nuget\\packages"
+    ]
+  }
+}
