@@ -3,7 +3,7 @@ public class ContaCorrente{
     public string titular;
     public int agencia;
     public int conta;
-    public double saldo;
+    private double saldo {get; set;}
 
     public ContaCorrente() {}
     
@@ -14,6 +14,8 @@ public class ContaCorrente{
         this.conta = conta;
         this.saldo = saldo;
     }
+
+
 
     public bool Sacar(double valor)
     {
