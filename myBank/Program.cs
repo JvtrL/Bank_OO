@@ -7,11 +7,12 @@ namespace myBank
         static void Main(string[] args)
         {
 
-            ContaCorrente contaDoJoaoV = new ContaCorrente("Joao V", 1234, 789, 100.50);
-
-            ContaCorrente contaDoTuke = new ContaCorrente("Tuke", 1234, 790, 50.50);
-
-            ContaCorrente contaDaTiaVirginia = new ContaCorrente("Tia Virginia", 1234, 907, 10000.99);
+            ContaCorrente contaDoJoaoV = new ContaCorrente("Joao V", 1234, 100.50);
+            contaDoJoaoV.Conta = 789;
+            ContaCorrente contaDoTuke = new ContaCorrente("Tuke", 1234, 50.50);
+            contaDoTuke.Conta = 790;
+            ContaCorrente contaDaTiaVirginia = new ContaCorrente("Tia Virginia", 1234, 10000.99);
+            contaDaTiaVirginia.Conta = 990;
 
             contaDoJoaoV.Saldo += 500;
 

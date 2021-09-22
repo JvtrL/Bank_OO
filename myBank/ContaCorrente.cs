@@ -23,11 +23,10 @@ public class ContaCorrente{
     
     public ContaCorrente() {}
     
-    public ContaCorrente(string contacorrente_titular, int contacorrente_agencia, int contacorrente_conta, double contacorrente_saldo)
+    public ContaCorrente(string contacorrente_titular, int contacorrente_agencia, double contacorrente_saldo)
     {
         Titular = contacorrente_titular;
         Agencia = contacorrente_agencia;
-        Conta = contacorrente_conta;
         Saldo = contacorrente_saldo;
     }
 
