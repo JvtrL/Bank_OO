@@ -13,9 +13,11 @@ namespace myBank
 
             ContaCorrente contaDaTiaVirginia = new ContaCorrente("Tia Virginia", 1234, 907, 10000.99);
 
-            contaDoJoaoV.Sacar(90);
+            contaDoJoaoV.Saldo += 500;
 
-            Console.WriteLine("O saldo da conta do JoaoV é:" + contaDoJoaoV.saldo);
+            /*contaDoJoaoV.Sacar(90);*/
+
+            Console.WriteLine("O saldo da conta do JoaoV é:" + contaDoJoaoV.Saldo);
         }
     }
 }
