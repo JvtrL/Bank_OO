@@ -6,6 +6,7 @@ public class ContaCorrente{
     
     private double _saldo;
     
+    public static int TotaldeContasCriadas { get; set; }
     public double Saldo 
     { 
         get
@@ -28,6 +29,8 @@ public class ContaCorrente{
         Titular = contacorrente_titular;
         Agencia = contacorrente_agencia;
         Saldo = contacorrente_saldo;
+
+        TotaldeContasCriadas ++;
     }
 
 
