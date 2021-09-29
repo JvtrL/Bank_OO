@@ -28,16 +28,22 @@ namespace myBank
             ContaCorrente contaDoMarquinhosdoGrau = new ContaCorrente("Marco Antonio", 1234, 124.24, funcionarioMagrelinho);
             contaDoMarquinhosdoGrau.Conta = 124;
 
-            Console.WriteLine("O saldo da conta da João Vitor L é: " + contaDoJoaoV.Saldo);
-            Console.WriteLine("O saldo da conta do Túlio é: " + contaDoTuke.Saldo);
+            Console.WriteLine("O titular da conta é o: " + contaDoJoaoV.Titular);
+            Console.WriteLine("O titular da conta é o: " + contaDoTuke.Titular);
+            Console.WriteLine("O titular da conta é o: " + contaDaTiaVirginia.Titular);
+            Console.WriteLine("O saldo da conta do João Vitor L é: " + contaDoJoaoV.Saldo);
 
             Console.WriteLine("A comissao do Vendedor Fábio é: " + funcionarioFabin.Comissao);
             Console.WriteLine("A comissao do Vendedor André é: " + funcionarioMagrelinho.Comissao);
 
-            Console.WriteLine("O salário do Fábio é: " + funcionarioFabin.Salario);
+            contaDoJoaoV.Sacar(100);
+            Console.WriteLine("Seu saldo após o saque de R$100,00 é: " + contaDoJoaoV.Saldo);
+            contaDoJoaoV.Depositar(150);
+            Console.WriteLine("Seu saldo após o deposito de R$150,00 é: " + contaDoJoaoV.Saldo);
+            contaDoJoaoV.Transferir(100, contaDoMarquinhosdoGrau);
+            Console.WriteLine("Seu saldo após a transferência de R$100,00 é: " + contaDoJoaoV.Saldo);
 
             Console.WriteLine("O total de contas criadas é: " + ContaCorrente.TotaldeContasCriadas);
-            Console.WriteLine("O total de comissao a ser pago é: " + ContaCorrente.TotalDeComissao);
         }
     }
 }
