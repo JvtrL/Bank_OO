@@ -3,10 +3,12 @@ public class ContaCorrente{
     public string Titular { get; set; }
     public int Agencia { get; set; }
     public int Conta { get; set; }
-    
+   
     private double _saldo;
-    
+   
+    public static double TotalDeComissao { get; set; }
     public static int TotaldeContasCriadas { get; set; }
+   
     public double Saldo 
     { 
         get
@@ -24,15 +26,16 @@ public class ContaCorrente{
     
     public ContaCorrente() {}
     
-    public ContaCorrente(string contacorrente_titular, int contacorrente_agencia, double contacorrente_saldo)
+    public ContaCorrente(string contacorrente_titular, int contacorrente_agencia, double contacorrente_saldo, Funcionario funcionario)
     {
         Titular = contacorrente_titular;
         Agencia = contacorrente_agencia;
         Saldo = contacorrente_saldo;
 
         TotaldeContasCriadas ++;
+        TotalDeComissao += contacorrente_saldo*0.01;
+        funcionario.Comissao += contacorrente_saldo*0.01;
     }
-
 
 
      public bool Sacar(double valor)
