@@ -18,8 +18,9 @@ public class ContaCorrente{
         
         set
         {
-            if(value >= 0){
-                this._saldo = value;
+            if(value >= 0)
+            {
+                 this._saldo = value;
             }
         } 
     }

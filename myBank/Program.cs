@@ -11,13 +11,13 @@ namespace myBank
             funcionarioMagrelinho.Nome = "André";
             funcionarioMagrelinho.CPF = "124.124.124-24";
             funcionarioMagrelinho.Cargo = "Só anda";
-            funcionarioMagrelinho.Salario = 1.50;
+            funcionarioMagrelinho.Salario = 1500.00;
 
             Funcionario funcionarioFabin = new Funcionario();
             funcionarioFabin.Nome = "Sr Fábio";
             funcionarioFabin.CPF = "127.332.190-24";
             funcionarioFabin.Cargo = "Vendedor";
-            funcionarioFabin.Salario = 1500;
+            funcionarioFabin.Salario = 900.00;
 
             ContaCorrente contaDoJoaoV = new ContaCorrente("João Vitor L", 1234, 1200.00, funcionarioFabin);
             contaDoJoaoV.Conta = 789;
