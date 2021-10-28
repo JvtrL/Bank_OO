@@ -9,7 +9,7 @@ public class Gerente : Funcionario
         } 
         set
         {
-            _bonificacaom += value * 0.05;
+            _bonificacao += value * 0.08;
         } 
     }
 }

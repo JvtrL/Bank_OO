@@ -13,7 +13,7 @@ public abstract class Funcionario
         } 
         set
         {
-            _bonificacao += value * 0.01;
+            _bonificacao += Salario * 0.01;
         } 
     }
 }

@@ -11,22 +11,24 @@ namespace myBank
             {
                Nome = "Christian",
                CPF = "120.789.456-90",
-               Salario = 2200.00
+               Salario = 2200.00,
             };
 
             Vendedor vendedorMagrelinho = new Vendedor()
             {
                 Nome = "André",
                 CPF = "124.124.124-24",
-                Salario = 1500.00
+                Salario = 1500.00,
             };
 
             Vendedor vendedorFabin = new Vendedor()
             {
-                Nome = "Sr Fábio";
-                CPF = "127.332.190-24";
-                Salario = 900.00;
+                Nome = "Sr Fábio",
+                CPF = "127.332.190-24",
+                Salario = 900.00,
             };
+
+        vendedorFabin.Bonificacao = vendedorFabin.Salario;
 
             ContaCorrente contaDoJoaoV = new ContaCorrente("João Vitor L", 1234, 1200.00, vendedorFabin);
             contaDoJoaoV.Conta = 789;
@@ -37,15 +39,13 @@ namespace myBank
             ContaCorrente contaDoMarquinhosdoGrau = new ContaCorrente("Marco Antonio", 1234, 124.24, vendedorMagrelinho);
             contaDoMarquinhosdoGrau.Conta = 124;
 
-            Console.WriteLine("É o brad:" + vendedorFabin.Comissao);
-
-           /* Console.WriteLine("O titular da conta é o: " + contaDoJoaoV.Titular);
+            Console.WriteLine("O titular da conta é o: " + contaDoJoaoV.Titular);
             Console.WriteLine("O titular da conta é o: " + contaDoTuke.Titular);
             Console.WriteLine("O titular da conta é o: " + contaDaTiaVirginia.Titular);
             Console.WriteLine("O saldo da conta do João Vitor L é: " + contaDoJoaoV.Saldo);
 
-            Console.WriteLine("A comissao do Vendedor Fábio é: " + funcionarioFabin.Comissao);
-            Console.WriteLine("A comissao do Vendedor André é: " + funcionarioMagrelinho.Comissao);
+            Console.WriteLine("A comissao do Vendedor Fábio é: " + vendedorFabin.Comissao);
+            Console.WriteLine("A comissao do Vendedor André é: " + vendedorMagrelinho.Comissao);
 
             contaDoJoaoV.Sacar(100);
             Console.WriteLine("Seu saldo após o saque de R$100,00 é: " + contaDoJoaoV.Saldo);
@@ -54,7 +54,7 @@ namespace myBank
             contaDoJoaoV.Transferir(100, contaDoMarquinhosdoGrau);
             Console.WriteLine("Seu saldo após a transferência de R$100,00 é: " + contaDoJoaoV.Saldo);
 
-            Console.WriteLine("O total de contas criadas é: " + ContaCorrente.TotaldeContasCriadas);*/
+            Console.WriteLine("O total de contas criadas é: " + ContaCorrente.TotaldeContasCriadas);
         }
     }
 }

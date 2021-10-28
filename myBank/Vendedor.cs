@@ -9,7 +9,7 @@ public class Vendedor : Funcionario
         } 
         set
         {
-            _bonificacao += value * 0.03;
+            _bonificacao += value * 0.02;
         } 
     }
 
