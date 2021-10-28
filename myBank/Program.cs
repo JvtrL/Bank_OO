@@ -12,6 +12,7 @@ namespace myBank
                Nome = "Christian",
                CPF = "120.789.456-90",
                Salario = 2200.00,
+               NumeroDeAgencias = 3,
             };
 
             Vendedor vendedorMagrelinho = new Vendedor()
@@ -19,6 +20,7 @@ namespace myBank
                 Nome = "André",
                 CPF = "124.124.124-24",
                 Salario = 1500.00,
+                NumeroDeClientesAtendidos = 1,
             };
 
             Vendedor vendedorFabin = new Vendedor()
@@ -26,6 +28,7 @@ namespace myBank
                 Nome = "Sr Fábio",
                 CPF = "127.332.190-24",
                 Salario = 900.00,
+                NumeroDeClientesAtendidos = 2,
             };
 
         vendedorFabin.Bonificacao = vendedorFabin.Salario;
@@ -55,6 +58,9 @@ namespace myBank
             Console.WriteLine("Seu saldo após a transferência de R$100,00 é: " + contaDoJoaoV.Saldo);
 
             Console.WriteLine("O total de contas criadas é: " + ContaCorrente.TotaldeContasCriadas);
+
+            Console.WriteLine("O gerente terá: " + gerenteChr_istian.CalcularFerias() + " dias de ferias.");
+            Console.WriteLine("O vendedor terá: " + vendedorFabin.CalcularFerias() + " dias de ferias.");
         }
     }
 }

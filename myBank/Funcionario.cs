@@ -16,4 +16,7 @@ public abstract class Funcionario
             _bonificacao += Salario * 0.01;
         } 
     }
+
+    public abstract int CalcularFerias(); 
+
 }
