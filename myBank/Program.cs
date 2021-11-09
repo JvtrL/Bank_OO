@@ -12,7 +12,7 @@ namespace myBank
                Nome = "Christian",
                CPF = "120.789.456-90",
                Salario = 1750.00,
-               NumeroDeAgencias = 3,
+               NumeroDeAgencias = 1,
             };
 
             Vendedor vendedorMagrelinho = new Vendedor()
@@ -40,6 +40,9 @@ namespace myBank
             };
 
         vendedorFabin.Bonificacao = vendedorFabin.Salario;
+        vendedorMagrelinho.Bonificacao = vendedorMagrelinho.Salario;
+        vendedorGaibro.Bonificacao = vendedorGaibro.Salario;
+        gerenteChr_istian.Bonificacao = gerenteChr_istian.Salario;
 
             ContaCorrente contaDoJoaoV = new ContaCorrente("João Vitor Lima da Silveira", 1234, 1200.00, vendedorFabin);
             contaDoJoaoV.Conta = 789;
@@ -47,8 +50,6 @@ namespace myBank
             contaDoTuke.Conta = 790;
             ContaCorrente contaDaTiaVirginia = new ContaCorrente("Virginia", 1234, 1499.99, vendedorGaibro);
             contaDaTiaVirginia.Conta = 990;
-            ContaCorrente contaDoMarquinhosdoGrau = new ContaCorrente("Marco Antonio", 1234, 124.24, vendedorMagrelinho);
-            contaDoMarquinhosdoGrau.Conta = 124;
 
             Console.WriteLine("O titular da conta é o: " + contaDoJoaoV.Titular);
             Console.WriteLine("O titular da conta é o: " + contaDoTuke.Titular);
